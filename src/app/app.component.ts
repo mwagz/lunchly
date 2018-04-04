@@ -20,7 +20,19 @@ export class AppComponent {
       'Flamme Burger',
       'Bubs',
       'Sub 16',
-      'Thai'
+      'Thai',
+      'Jimmy John\'s',
+      'Kazan',
+      'Happy Kitchen',
+      'El Toro',
+      'McAllister\'s',
+      'Panera',
+      'Chipotle',
+      'Noodles, Inc.',
+      'Ted\'s Montana Grill',
+      'Squealer\'s'
+      'Costco Food Court',
+      'Costco (just the free samples)'
     ];
 
     this.selectedPlace = 'Click the button';
