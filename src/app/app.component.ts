@@ -14,20 +14,31 @@ export class AppComponent {
     this.places = [
       'Bubs',
       'Chipotle',
+      'Costco (just the free samples)'
+      'Costco Food Court',
       'Eat Thai',
+      'El Toro',
       'Firehouse',
       'Five Guys',
       'Flamme Burger',
       'Grilliant',
+      'Happy Kitchen',
       'Hotcakes',
+      'Jimmy John\'s',
+      'Kazan',
+      'McAllister\'s',
       'Midday Deli',
+      'Noodles, Inc.',
       'Panera',
       'Philly Steak',
       'Qdoba',
+      'Squealer\'s'
       'Sub 16',
       'Subway',
       'Taco Bell',
+      'Ted\'s Montana Grill',
       'Thai Select',
+      'Thai'
       'Yats'
     ];
 
