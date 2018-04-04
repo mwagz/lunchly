@@ -17,6 +17,9 @@ export class AppComponent {
       'Yats',
       'Five Guys',
       'Subway',
+      'Flamme Burger',
+      'Bubs',
+      'Sub 16',
       'Thai'
     ];
 
