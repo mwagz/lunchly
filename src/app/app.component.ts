@@ -12,27 +12,34 @@ export class AppComponent {
 
   constructor() {
     this.places = [
-      'Qdoba',
-      'Firehouse',
-      'Yats',
-      'Five Guys',
-      'Subway',
-      'Flamme Burger',
       'Bubs',
-      'Sub 16',
-      'Thai',
+      'Chipotle',
+      'Costco (just the free samples)'
+      'Costco Food Court',
+      'Eat Thai',
+      'El Toro',
+      'Firehouse',
+      'Five Guys',
+      'Flamme Burger',
+      'Grilliant',
+      'Happy Kitchen',
+      'Hotcakes',
       'Jimmy John\'s',
       'Kazan',
-      'Happy Kitchen',
-      'El Toro',
       'McAllister\'s',
-      'Panera',
-      'Chipotle',
+      'Midday Deli',
       'Noodles, Inc.',
-      'Ted\'s Montana Grill',
+      'Panera',
+      'Philly Steak',
+      'Qdoba',
       'Squealer\'s'
-      'Costco Food Court',
-      'Costco (just the free samples)'
+      'Sub 16',
+      'Subway',
+      'Taco Bell',
+      'Ted\'s Montana Grill',
+      'Thai Select',
+      'Thai'
+      'Yats'
     ];
 
     this.selectedPlace = 'Click the button';
