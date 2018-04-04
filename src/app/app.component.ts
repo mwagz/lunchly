@@ -47,7 +47,7 @@ export class AppComponent {
 
   findPlace(): void {
     let place = this.randomPlace();
-    if (this.noThai && place === 'Thai') {
+    if (this.noThai && place.includes('Thai')) {
       this.findPlace();
       return;
     }
