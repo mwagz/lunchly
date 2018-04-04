@@ -46,15 +46,14 @@ export class AppComponent {
   }
 
   findPlace(): void {
-    let place = this.randomPlace();
-    if (this.noThai && place.includes('Thai')) {
-      this.findPlace();
-      return;
-    }
-    this.selectedPlace = place;
+    this.selectedPlace = this.randomPlace();
   }
 
   randomPlace(): string {
-    return this.places[Math.floor(Math.random() * this.places.length)];
+    let places = this.places;
+    if (this.noThai) {
+      places = places.filter(place => !place.includes('Thai'));
+    }
+    return places[Math.floor(Math.random() * places.length)];
   }
 }
