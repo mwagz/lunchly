@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6-browsers
+    working_directory: ~/lunchly
+    dependencies:
+      pre:
+        - npm install npm@5.6.0 -g
+        - npm install angular-cli@latest -g
+    steps:
+      - checkout
+      - run:
+          name: install-node-modules
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
