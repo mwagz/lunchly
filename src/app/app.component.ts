@@ -12,15 +12,23 @@ export class AppComponent {
 
   constructor() {
     this.places = [
-      'Qdoba',
-      'Firehouse',
-      'Yats',
-      'Five Guys',
-      'Subway',
-      'Flamme Burger',
       'Bubs',
+      'Chipotle',
+      'Eat Thai',
+      'Firehouse',
+      'Five Guys',
+      'Flamme Burger',
+      'Grilliant',
+      'Hotcakes',
+      'Midday Deli',
+      'Panera',
+      'Philly Steak',
+      'Qdoba',
       'Sub 16',
-      'Thai'
+      'Subway',
+      'Taco Bell',
+      'Thai Select',
+      'Yats'
     ];
 
     this.selectedPlace = 'Click the button';
@@ -28,7 +36,7 @@ export class AppComponent {
 
   findPlace(): void {
     let place = this.randomPlace();
-    if (this.noThai && place === 'Thai') {
+    if (this.noThai && place.includes('Thai')) {
       this.findPlace();
       return;
     }
