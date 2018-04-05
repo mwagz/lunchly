@@ -1,9 +1,12 @@
+<div class="selection" [ngClass]="{'placeholder' : !hasSelected}">{{selectedPlace}}</div>
 <div class="form">
   <div class="actions">
     <button (click)="findPlace()">Where do I want to Eat?</button>
   </div>
   <div class="options">
-    <input [(ngModel)]="noThai" type="checkbox" />Exclude Thai
+    <span (click)="toggleOptions()">Filter Options</span>
+    <ul *ngIf="showOptions">
+      <li><input [(ngModel)]="noThai" type="checkbox" />Exclude Thai</li>
+    </ul>
   </div>
-  <div class="selection">{{selectedPlace}}</div>
 </div>
