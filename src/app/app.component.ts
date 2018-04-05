@@ -45,6 +45,9 @@ export class AppComponent {
     ];
 
     this.selectedPlace = 'Click the Button';
+    this.noThai = false;
+    this.showOptions = false;
+    this.hasSelected = false;
   }
 
   findPlace(): void {
