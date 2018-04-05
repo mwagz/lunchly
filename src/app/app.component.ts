@@ -51,9 +51,11 @@ export class AppComponent {
 
   randomPlace(): string {
     let places = this.places;
+
     if (this.noThai) {
       places = places.filter(place => !place.includes('Thai'));
     }
+
     return places[Math.floor(Math.random() * places.length)];
   }
 }
