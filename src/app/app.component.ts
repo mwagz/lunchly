@@ -9,6 +9,8 @@ export class AppComponent {
   places: any[];
   noThai: boolean;
   selectedPlace: string;
+  showOptions: boolean;
+  hasSelected: boolean;
 
   constructor() {
     this.places = [
@@ -42,11 +44,15 @@ export class AppComponent {
       'Yats'
     ];
 
-    this.selectedPlace = 'Click the button';
+    this.selectedPlace = 'Click the Button';
+    this.noThai = false;
+    this.showOptions = false;
+    this.hasSelected = false;
   }
 
   findPlace(): void {
     this.selectedPlace = this.randomPlace();
+    this.hasSelected = true;
   }
 
   randomPlace(): string {
@@ -57,5 +63,9 @@ export class AppComponent {
     }
 
     return places[Math.floor(Math.random() * places.length)];
+  }
+
+  toggleOptions(): void {
+    this.showOptions = !this.showOptions;
   }
 }
